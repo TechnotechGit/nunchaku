@@ -1,20 +1,20 @@
 name: PR Tests
 on:
-  pull_request:
-    types: [opened, synchronize, reopened, ready_for_review]
-    paths:
-      - "nunchaku/**"
-      - "src/**"
-      - "tests/**"
-      - "examples/**"
-      - "scripts/**"
-      - ".github/workflows/**"
-  workflow_dispatch:
-    inputs:
-      ref:
-        description: 'Branch, tag, or SHA to test (default: main)'
-        required: false
-        default: 'main'
+  # pull_request:
+  #   types: [opened, synchronize, reopened, ready_for_review]
+  #   paths:
+  #     - "nunchaku/**"
+  #     - "src/**"
+  #     - "tests/**"
+  #     - "examples/**"
+  #     - "scripts/**"
+  #     - ".github/workflows/**"
+  # workflow_dispatch:
+  #   inputs:
+  #     ref:
+  #       description: 'Branch, tag, or SHA to test (default: main)'
+  #       required: false
+  #       default: 'main'
 concurrency:
   group: ${{ github.repository }}-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true

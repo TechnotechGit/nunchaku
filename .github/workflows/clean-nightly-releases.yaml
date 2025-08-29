@@ -1,7 +1,7 @@
 name: Clean Old Nightly Releases
 on:
-  schedule:
-    - cron: '* 6 * * *'
+  # schedule:
+  #   - cron: '* 6 * * *'
 permissions:
   contents: write
 jobs:

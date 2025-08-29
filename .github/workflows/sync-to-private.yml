@@ -1,8 +1,8 @@
 name: Synchronize to Private Repository
 on:
-  push:
-    branches:
-      - main
+  # push:
+  #   branches:
+  #     - main
 permissions:
   contents: write
 jobs:

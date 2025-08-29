@@ -1,8 +1,8 @@
 # Borrowed from https://github.com/sgl-project/sglang/blob/main/.github/workflows/close-inactive-issues.yml
 name: Close Inactive Issues
 on:
-  schedule:
-    - cron: '0 0 * * *'
+  # schedule:
+  #   - cron: '0 0 * * *'
 permissions:
   issues: write
   contents: read
